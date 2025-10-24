@@ -4,6 +4,12 @@
     justify-content: space-evenly;
 }
 .footer{
+    display: flex;
+    flex-direction: row;
+    background-color: cyan;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    height: auto;
+    bottom: 0%;
 }

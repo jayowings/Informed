@@ -1,15 +1,32 @@
 .center{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    height: 200px;
+}
+h1{
+    display: flex;
+    width: 600px;
+}
+.J{
+    padding-right: 50px;
+}
+.E{
+    padding-left: 50px;
+}
+.else{
+    text-align: center;
 }
 .footer{
     display: flex;
     flex-direction: row;
-    background-color: cyan;
-    justify-content: center;
-    align-items: center;
+    background-color: rgb(153, 175, 196);
+    justify-content: space-evenly;
+    text-align: center;
     position: fixed;
     height: auto;
     bottom: 0%;
+    left: 0%;
+    right: 0%;
+    padding: 20px;
 }

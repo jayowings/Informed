@@ -4,29 +4,50 @@
     justify-content: center;
     height: 200px;
 }
-h1{
-    display: flex;
-    width: 600px;
-}
 .J{
-    padding-right: 50px;
+    padding-right: 350px;
 }
 .E{
-    padding-left: 50px;
+    padding-left: 350px;
 }
 .else{
     text-align: center;
 }
-.footer{
+.Break{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: rgb(153, 175, 196);
-    justify-content: space-evenly;
+    color:  rgb(79, 16, 24);
+    justify-content: center;
     text-align: center;
-    position: fixed;
-    height: auto;
-    bottom: 0%;
     left: 0%;
     right: 0%;
     padding: 20px;
+}
+.Registry{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    height: auto;
+    left: 0%;
+    right: 0%;
+    padding: 20px;
+}
+.Venmo{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(79, 16, 24);
+    color :rgb(153, 175, 196);
+    justify-content: center;
+    text-align: center;
+    left: 0%;
+    right: 0%;
+    padding: 20px;
+}
+.Choices{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
 }

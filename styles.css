@@ -1,39 +1,66 @@
 .slideshow{
     position: relative;
-    width: 100%;
     max-width: 800%;
     padding: 20px auto;
-    overflow: hidden;
     background-color: rgb(157, 164, 157);
+}
+.viewport{
+        overflow: hidden;
+        width: 100%;
 }
 .pics{
     display: flex;
-    transition: transform 0.6s ease;
+    gap: 16px;
+    transition: transform 520ms cubic-bezier(.22,.9,.34,1);
+    will-change: transform;
+    padding: 8px 0;
 }
 .pic{
-    flex: 0 0 33.333%;
+    flex: 0 0 60%;
+    margin: 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
     opacity: 0.7;
-    transform: scale(0.9);
-    transition: transform 0.6s, opacity 0.6s;
+    transform-origin: center;
+    transition: transform 520ms, opacity 520ms;
+    width: 400px;
+    opacity: 1;
+    background-color: rgb(150, 160, 150);
 }
 .pic img{
-    width: 90%;
+    max-width: 400px;
+    max-height: 800px;
+    display: block;
+}
+.pic.active {
+  opacity: 1;
+  transform: scale(1.03);
+  z-index: 3;
 }
 .nav{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     border: none;
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0,0,0,0.45);
+    color: #fff;
+    font-size: 20px;
+    display: grid;
+    place-items: center;
     cursor: pointer;
-    z-index: 10;
-    transition: background-color 0.3s;
+    z-index: 9;
 }
-.prev { left: 10px; }
-.next { right: 10px; }
+.prev { left: 8px; }
+.next { right: 8px; }
+@media (max-width: 520px) {
+  .slide { flex-basis: 85%; }
+  .nav { width: 36px; height:36px; font-size:16px; }
+}
 
 .center{
     display: flex;

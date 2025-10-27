@@ -109,6 +109,10 @@ h1{
     right: 0%;
     padding: 20px;
 }
+img{
+    height: 75px;
+    border-radius: 50%;
+}
 
 .Venmo{
     display: flex;

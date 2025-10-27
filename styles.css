@@ -1,3 +1,25 @@
+body{
+    margin: 0px;
+}
+
+.header{
+    background-color: rgb(79, 16, 24);
+    color :rgb(153, 175, 196);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.names{
+    margin-left: 20px;
+    font-size: 50px;
+    color: #fff;
+}
+.forms{
+    justify-items: right;
+    margin-right: 10px;
+}
+
 .slideshow{
     position: relative;
     max-width: 800%;

@@ -80,10 +80,12 @@ h1{
     margin: 0;
 }
 .J{
-    padding-right: 50px;
+    padding-left: calc(2vw);
+    padding-right: calc(20vw);
 }
 .E{
-    padding-left: 50px;
+    padding-left: calc(20vw);
+    padding-right: calc(2vw);
 }
 .else{
     text-align: center;

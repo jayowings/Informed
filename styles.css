@@ -82,10 +82,14 @@ h1{
 .J{
     padding-left: calc(2vw);
     padding-right: calc(20vw);
+    justify-content: center;
+    text-justify: center;
 }
 .E{
     padding-left: calc(20vw);
     padding-right: calc(2vw);
+    justify-content: center;
+    text-justify: center;
 }
 .else{
     text-align: center;

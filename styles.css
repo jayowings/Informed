@@ -33,6 +33,7 @@
     max-height: 100%;
     object-fit: contain;
     display: block;
+    border-radius: 0;
 }
 .pic.active {
   opacity: 1;
@@ -109,7 +110,7 @@ h1{
     right: 0%;
     padding: 20px;
 }
-img{
+.Registry img{
     height: 75px;
     border-radius: 50%;
 }

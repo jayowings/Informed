@@ -114,6 +114,9 @@ h1{
     height: 75px;
     border-radius: 50%;
 }
+.reg{
+    width: 33%;
+}
 
 .Venmo{
     display: flex;
@@ -131,4 +134,7 @@ h1{
     flex-direction: row;
     justify-content: space-evenly;
     text-align: center;
+}
+.ven{
+    width: 33%;
 }

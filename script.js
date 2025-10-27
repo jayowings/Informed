@@ -27,6 +27,7 @@ function calculateSize() {
   if (window.innerWidth < 600) visibleSlides = 1;
   else if (window.innerWidth < 900) visibleSlides = 2;
   else visibleSlides = 3;
+  let visibleWithHalf = visibleSlides + 1;
 
   const gap = parseFloat(getComputedStyle(picsContainer).gap) || 0;
   const totalGapSpace = (visibleWithHalf - 1) * gap;
@@ -48,12 +49,6 @@ function updatePics() {
         pic.classList.toggle('active', i === index);
     });
 } 
-
-window.addEventListener('resize', calculateSize);
-
-const firstClone = pics[0].cloneNode(true);
-const lastClone = pics[pics.length - 1].cloneNode(true);
-const extraClone = pics[pics.length - 2].cloneNode(true);
 
 picsContainer.style.transform = `translateX(-${index * size}%)`;
 
@@ -80,7 +75,7 @@ picsContainer.addEventListener('transitionend', () => {
   }
   if (index < numClones) {
     picsContainer.style.transition = 'none';
-    index = total - (2 * numClones);
+    index = total - numClones - 1;
     picsContainer.style.transform = `translateX(-${index * size}%)`;
   }
 

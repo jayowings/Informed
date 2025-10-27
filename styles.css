@@ -10,28 +10,29 @@
 }
 .pics{
     display: flex;
-    gap: 20px;
     transition: transform 520ms cubic-bezier(.22,.9,.34,1);
     will-change: transform;
-    padding: 8px 0;
 }
 .pic{
-    padding: 10px;
+    flex: 0 0 auto;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0.7;
     transform-origin: center;
     transition: transform 520ms, opacity 520ms;
-    min-width: 40%;
     opacity: 1;
     background-color: rgb(150, 160, 150);
     box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
 }
 .pic img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
 }
 .pic.active {
   opacity: 1;

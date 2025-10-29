@@ -143,14 +143,19 @@ h1{
     left: 0%;
     right: 0%;
     padding: 20px;
+    align-items: stretch;
 }
 .Registry img{
     height: 75px;
     border-radius: 50%;
-    align-items: flex-end;
+    margin-top: auto;
 }
 .reg{
+    display: flex;
+    flex-direction: column;
     width: 33%;
+    align-items: center;
+    flex: 1;
 }
 
 .Venmo{

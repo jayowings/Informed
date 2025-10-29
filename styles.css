@@ -139,9 +139,7 @@ h1{
     flex-direction: row;
     justify-content: space-evenly;
     text-align: center;
-    height: auto;
-    left: 0%;
-    right: 0%;
+    width: 100%;
     padding: 20px;
     align-items: stretch;
 }
@@ -153,9 +151,9 @@ h1{
 .reg{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 33%;
-    align-items: center;
-    flex: 1;
+    align-items: stretch;
 }
 
 .Venmo{

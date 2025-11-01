@@ -176,3 +176,14 @@ h1{
 .ven{
     width: 33%;
 }
+body{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.vote{
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 20px;
+  font-style: normal;
+}
